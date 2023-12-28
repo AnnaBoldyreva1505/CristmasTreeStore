@@ -1,0 +1,162 @@
+@font-face {
+  font-family: Cormorant;
+  font-weight: 700;
+  src: local("Cormorant"), local("Cormorant-Bold"),
+    url("../fonts/cormorant-v11-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/cormorant-v11-latin_cyrillic-700.woff") format("woff");
+  font-display: swap;
+}
+
+
+:root {
+    --main-color: #ffffff;
+        --second-color: #262626;
+        --one-color: #00654E;
+        --two-color: #006E55;
+        --three-color: #005844;
+        --main-bg-color: #005844;
+        --second-bg-color: #C0B487;
+        --trigger-color: #E5AB39;
+        box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+font-size: 18px;
+color: var(--main-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+h1, h2 {
+    font-family: Cormorant, sans-serif;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-height: 100%;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+    /* @media (min-width: 580px) {
+        padding: 0 29px;
+    }
+
+    @media (min-width: 820px) {
+        padding: 0 43px;
+    }
+
+    @media (min-width: 1120px) {
+        padding: 0 92px;
+    }
+} */
+
+.hide {
+    display: none;
+}
+
+/* 
+
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #1c1c1c;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 80px;
+
+    @media (min-width: 580px) {
+        padding-bottom: 100px;
+    }
+}
+
+
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+/*
+Пример контейнера
+
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+
+
