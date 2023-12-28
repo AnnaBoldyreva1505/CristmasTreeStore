@@ -88,6 +88,12 @@ fieldset {
   }
 }
 
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 39px;
+  }
+}
+
 .hide {
   display: none;
 }
