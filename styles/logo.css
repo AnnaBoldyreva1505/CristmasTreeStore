@@ -1,9 +1,41 @@
 .logo {
-    width: 164px;
-    height: 76px;
-    color: var(--main-bg-color);
+  width: 164px;
+  height: 76px;
+  color: var(--main-bg-color);
 }
 
 .logo__second {
-    color: var(--main-color);
+  color: var(--main-color);
 }
+
+@media (max-width: 1280px) {
+  .logo {
+    width: 115px;
+    height: 55px;
+  }
+}
+
+/* @media (max-width: 1000px) {
+}
+
+@media (max-width: 760px) {
+} */
+
+@media (max-width: 580px) {
+  .logo {
+    width: 73px;
+    height: 35px;
+  }
+}
+
+/* @media (max-width: 1280px) {
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 760px) {
+}
+
+@media (max-width: 580px) {
+} */
